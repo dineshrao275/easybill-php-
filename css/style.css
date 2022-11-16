@@ -1,0 +1,666 @@
+a{
+    text-decoration:none;
+}
+
+.front-page {
+    background-image: url("images/front-page-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+
+.front-page-header {
+    width: 100%;
+    height: 20vh;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    background:#fff;
+}
+ 
+
+
+.branding {
+    height:20vh;
+    float: left;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.branding img {
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.button {
+    margin-left: 45%;
+}
+
+.nav {
+    height: 20vh;
+    float: right;
+    text-align: center;
+    background-color:  #fff;
+}
+
+.menu {
+    width: 100%;
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 3vh 2vw;
+    margin: 0 1vw;
+    transition: .6s;
+    color:#990;
+    border-radius: 20px;    
+}
+
+.menu li:hover {
+    background-color: #127898;
+    transition: .6s;
+    color: #fff;
+    border-radius: 0;
+}
+
+/* SLIDER CSS */
+
+.slider {
+    width: 100%;
+    height: 50vh;
+}
+.slider img {
+    width: 100%;
+    height: 10%;
+}
+
+/* FOOTER CSS */
+
+.footer {
+    width: 100%;
+    height:45vh;
+    background-color: #769;
+    text-align: center;
+}
+
+.footer .row  div {
+    margin-top: 5vh;
+}
+
+.footer h3 {
+    color:cyan;
+}
+
+.quick-links , .social-links , .help {
+    list-style: none;
+    text-align: left;
+    width: 70%;
+    margin:3vh 0 1vh 5vw;
+
+}
+
+
+.quick-links li , .social-links  li, .help li {
+
+    text-decoration: none;
+    color: #000;
+    padding: 1vh 1vw;
+    transition:.5s;
+}
+
+
+.quick-links li:hover , .social-links  li:hover, .help li:hover 
+{
+background-color: #234;
+color:lightgray;
+padding-left: 5vw;
+transition:.5s;
+}  
+
+.author {
+  border-top: 1px solid #fff;  
+}
+
+.author-info {
+    padding-top: 2vh;
+}
+
+
+
+/* ABOUT CSS */
+
+
+.about-page {
+    width: 100%;
+    height: 140vh;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 2vh;
+}
+.about-page h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#897;
+    padding: 10vh ;
+
+}
+
+.about-page img {
+    width: 80%;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+.about-page p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5vh;
+    text-align: justify;
+}
+
+
+
+/* CONTACT CSS */
+
+
+.contact-page {
+    width: 100%;
+    height: 70vh;
+    margin: 5vh 1vw;
+    text-align: center;
+}
+
+.myform {
+    background-color: white;
+    border-radius: 30px 0;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.contact-image img{
+    width: 100%;
+    height: 70vh;
+    padding: 50px;
+}
+.contact-page form h1 {
+    padding: 4vh 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+}
+
+
+.contact-page form input {
+    padding: 1vh 1vw;
+    margin: 2vh;
+    border: none;
+    border-bottom: 1px solid #345;
+    outline: none;
+    transition: 1s;
+    background: transparent;
+}
+
+.contact-page form input:focus {
+    transition: 1s;
+    border-radius: 20px;
+    background-color: #345;
+    color: white;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-page {
+    width: 100%;
+    height: 50vh;
+    margin: 5vh 2vw;
+}
+
+.my-login-form {
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+.login-page form h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5vh;
+}
+
+.login-page form input {
+    margin: 1vh;
+    padding: 1vh;
+    border: none;
+    border-bottom: 1px solid #321;
+    outline: none;
+    font-size: 16px;
+    transition:.5s;
+}
+
+.login-page form input:focus {
+    border-radius:20px ;
+    background-color: #234;
+    color: white;
+    transition:.5s;
+}
+
+.submit-login-btn {
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .6s;
+    cursor: pointer;
+    background-color: #876;
+    margin-top:  5vh;   
+}
+
+.submit-login-btn:hover {
+
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+
+
+/* REGISTER CSS */
+
+.register-page {
+    width: 100%;
+    height: 60vh;
+    margin: 2vh 2vw;
+}
+
+.my-register-form{
+    background-color: lightgray;
+    text-align:center;
+}
+
+.register-page h1{
+    padding: 3vh;
+}
+
+.register-page form input {
+    margin: 1vh 1vw;
+    padding: 2vh 2vw; 
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #567;
+    background:transparent;
+    transition: .5s;
+}
+
+.register-page form input:focus {
+    border-radius: 30px;
+    transition: .5s;
+    background: #fff;;
+}
+
+#submit-register-btn {
+    
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .6s;
+    cursor: pointer;
+    background: #900;
+}
+
+#submit-register-btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+
+
+
+/* SIDEBAR CSS */
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 14%;
+    background-color: rgb(136, 131, 131);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    float: left;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a:focus {
+    background-color:#fff;
+    color: #000;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  .profile-page-header {
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 12vh;
+    background-color: #876;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+
+/* ADD CATAGORY */
+
+.add-catagory{
+    margin-top: 5vh;
+    width: 86%;
+    float: right;
+    text-align: center;
+}
+
+
+.add-catagory .row {
+    width: 50%;
+    background-color: lightgray;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.catagory-heading {
+    height: 8vh;
+    text-align: center;
+    background-color: #777;
+    padding: 1vh;
+}
+
+.catagory-heading h2 {
+    color: white;
+}
+
+.fields {
+    margin-top: 2vh;
+}
+
+.fields span {
+    margin: 0 15px 0 15px;
+}
+
+.add-catagory-form .btn {
+    margin: 2vh;
+}
+
+.fields input,
+.fields select {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+}
+
+.add-catagory-form {
+    margin-top: 5vh;
+}
+
+
+
+
+
+/* ADD PRODUCT */
+
+.add-product{
+    margin-top: 5vh;
+    width: 86%;
+    float: right;
+    text-align: center;
+}
+
+
+.add-product .row {
+    width: 50%;
+    background-color: lightgray;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.product-heading {
+    height: 8vh;
+    text-align: center;
+    background-color: #777;
+    padding: 1vh;
+}
+
+.product-heading h2 {
+    color: white;
+}
+
+.fields {
+    margin-top: 2vh;
+}
+
+.fields span {
+    margin: 0 15px 0 15px;
+}
+
+.add-product-form .btn {
+    margin: 2vh;
+}
+
+.fields input,
+.fields select {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+}
+
+.add-product-form {
+    margin-top: 5vh;
+}
+
+
+
+/* BILLING CSS */
+
+
+.billing {
+    width: 86%;
+    float:right;
+}
+.billing-heading{
+    margin:2vh 0;
+    text-align: center;
+}
+.choose-bill-type{
+    width: 25%;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.billing-heading h2 {
+    margin: auto;
+    padding: 2vh 2vw;
+    background-color: lightgray;
+}
+
+.bill-buttons {
+    margin: auto;
+    margin-top:5vh ;
+}
+
+.button-link {
+    display: inline;
+    float: left;
+}
+.new-bill-button {
+    float:right;
+}
+
+/* NEW BILL BUTTON */
+
+    .newbill {
+        width: 86%;
+        display: inline;
+        float: right;
+    }
+    .new-bill-heading{
+      background-color:lightgray;  
+    }
+
+select {
+    outline: none;
+    border: none;
+    border-bottom:1px solid #000 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:991px) {
+    .register-page {
+        height: 85vh;
+        margin: 5vh 0;
+    }
+    .menu li {
+        font-size: 15px;
+        padding: 10px;;
+    }
+    .register-page {
+        height: 85vh;
+        margin: 5vh 0;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .register-page {
+        height: 85vh;
+        margin: 25vh 0 5vh 0;
+    }
+    .login-page {
+        height: 50vh;
+        margin:25vh 0 5vh 0;
+    }
+    .about-page {
+        height: 170vh;
+        text-align: center;
+        background-color: #fff;
+        margin: 20vh 0 0 0;
+    }
+    .contact-page {
+        margin-top: 25vh;
+        height: 60vh;
+    }
+    .contact-image {
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+}
+
+@media only screen and (max-width: 576px) {
+    .register-page {
+        height: 85vh;
+        margin: 20vh 0 5vh 0;
+    }
+    .login-page {
+        height: 50vh;
+        margin:5vh 0;
+    }
+    .front-page-header {
+        width: 100%;
+        height: 25vh;
+        position: sticky;
+        top:0;
+        z-index: 999;
+    }
+    .menu li {
+        font-size: 15px;
+        padding: 5px;
+        margin: 0 1vw;
+    }
+    .about-page {
+        height: 230vh;
+       
+    }
+    .footer {
+        height:100vh;
+    }
+    .contact-page {
+        height: 60vh;
+    }
+    .contact-image {
+        display: none;
+    }
+  } 
+
+  @media only screen and (max-width: 360px) {
+    .register-page {
+        height: 85vh;
+        margin: 5vh 0;
+    }
+    .footer {
+        height:105vh;
+    }
+    .about-page {
+        height: 330vh;
+    }
+    .contact-page {
+        height: 60vh;
+    }
+    .contact-image {
+        display: none;
+    }
+    .sidebar a {
+        text-align: center;
+        float: none;
+      }
+}
