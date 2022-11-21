@@ -3,7 +3,7 @@
         if(!isset($_SESSION['userid']))
             header("location:../login.php");
 
-            $id=$_SESSION['userid'];
+            $vendor_id=$_SESSION['userid'];
     ?>
 
 <!DOCTYPE html>
@@ -71,7 +71,7 @@
                 <tbody>
                <?php 
                     include("../database/db.php");
-                   $query=mysqli_query($con,"select * from catagory where vendorid=$id");
+                   $query=mysqli_query($con,"select * from catagory where vendorid=$vendor_id");
                    
                    
                    if($query) {
@@ -86,11 +86,11 @@
                                     <?php echo $result[1]; ?> 
                                 </td>
                                 <td>
-                                    <a href="#">
+                                    <a href="./edit-catagory.php?catagory_id=<?php echo $result[0] ; ?>">
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">
+                                    <a href="./delete-catagory.php?catagory_id=<?php echo $result[0] ; ?>">
                                         <i class="fa-solid fa-trash-can"></i>
                                     </a>
                                 </td>

@@ -36,6 +36,9 @@
                         <input type='text' placeholder='User Name' required name='username' />
                         <input type='password' placeholder='Password' required name='password' />
                     </div>
+                    <div>
+                        <input type='text' placeholder='Firm Name' required name='firmname' />
+                    </div>
                     <div> <input id='submit-register-btn' type='submit' value='Register' /></div>
                 </form>
 

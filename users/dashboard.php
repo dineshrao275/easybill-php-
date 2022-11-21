@@ -5,6 +5,5 @@
 
 
 include('./sidebar.php');
-include('home.php');
 
 ?>

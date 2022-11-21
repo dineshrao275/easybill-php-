@@ -17,6 +17,9 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Bill</title>
 
+
+
+
     <!-- ONLINE LINKS -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>

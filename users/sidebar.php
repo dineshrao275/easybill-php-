@@ -1,7 +1,13 @@
 <?php    
-    session_start();
+    
         if(!isset($_SESSION['userid']))
             header("location:../login.php");
+
+            include("../database/db.php");
+            $vendor_id=$_SESSION['userid'];
+            $query=mysqli_query($con,"select firmname from registration where id=$vendor_id");
+            $result=mysqli_fetch_array($query);
+
     ?>
 
 
@@ -18,7 +24,7 @@
 </head>
 <body>
 <div>
-             <div class='profile-page-header'><h1>Firm Name</h1></div>
+             <div class='profile-page-header'><h1><?php echo $result[0] ; ?></h1></div>
             <div class="sidebar">
                 <a  href='./home.php'>Home</a>
                 <a  href='./billing.php'>Billing</a>

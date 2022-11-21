@@ -3,7 +3,7 @@
         if(!isset($_SESSION['userid']))
             header("location:../login.php");
 
-            $id=$_SESSION['userid'];
+            $vendor_id=$_SESSION['userid'];
     ?>
 
 <!DOCTYPE html>
@@ -62,7 +62,7 @@
                             
                             <span> <select name="catagoryname" id="catagoryname" required>
                             <?php  
-                                $query=mysqli_query($con,"select catagoryname from catagory");
+                                $query=mysqli_query($con,"select catagoryname from catagory where vendorid=$vendor_id");
                                 while($result=mysqli_fetch_array($query)) { ?>
                             
                             <option value="<?php echo $result[0]; ?>">
@@ -106,7 +106,7 @@
                 <tbody>
                <?php 
                   include("../database/db.php");
-                   $query=mysqli_query($con,"select * from products where vendorid=$id");
+                   $query=mysqli_query($con,"select * from products where vendorid=$vendor_id");
                    
                    
                    if($query) {
@@ -119,7 +119,7 @@
                                 <td><?php echo $result[2]; ?> </td>
                                 <td><?php echo $result[3]; ?> </td>
                                 <td><?php echo $result[5]; ?> </td>
-                                <td><a href="#"><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                                <td><a href="edit-product.php?product_id=<?php echo $result[0] ?>"><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="delete-product.php?product_id=<?php echo $result[0] ?>"><i class="fa-solid fa-trash-can"></i></a></td>
                            </tr>
 
                         <?php

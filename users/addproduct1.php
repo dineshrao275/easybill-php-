@@ -8,16 +8,16 @@
             $productprice=$_POST['productprice'];
             $catagoryname=$_POST['catagoryname'];
             $unit=$_POST['productunit'];
-            $id=$_SESSION['userid'];
+            $vendor_id=$_SESSION['userid'];
                 
                     include("../database/db.php");
-                        $query1=mysqli_query($con,"select * from products where vendorid=$id and catagoryname='$catagoryname' and productname='$productname' ");
+                        $query1=mysqli_query($con,"select * from products where vendorid=$vendor_id and catagoryname='$catagoryname' and productname='$productname' ");
                     
                     
 
                     if(!$row=mysqli_fetch_array($query1))
                     {
-                        $query=mysqli_query($con,"insert into products(productname,price,unit,vendorid,catagoryname) values ('$productname','$productprice','$unit',$id,'$catagoryname')");
+                        $query=mysqli_query($con,"insert into products(productname,price,unit,vendorid,catagoryname) values ('$productname','$productprice','$unit',$vendor_id,'$catagoryname')");
                         echo "Hello";   
                     if($query){
                         $_SESSION['product_inserted']="Product Added Successfully";
