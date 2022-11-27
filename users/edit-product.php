@@ -7,9 +7,6 @@
             $product_id=$_REQUEST['product_id'];
 
         include('../database/db.php');
-
-        $query=mysqli_query($con, "select * from products where id=$product_id");
-        $result=mysqli_fetch_array($query);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +14,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo3.png" type="image/x-icon">
+    
     <title>Edit Product</title>
 
     <!-- ONLINE LINKS -->
@@ -45,16 +44,18 @@
                     </div>
 
                     <form action="edit-product1.php" method="post" class='add-product-form'>
-                        
+                        <?php   $query=mysqli_query($con, "select productname, price from products where id=$product_id");
+        $result=mysqli_fetch_array($query);
+        ?>
                         <div class='fields ' >
                             <span>Product Name : </span>
                             <span> 
                             <input type='number' name='product_id' value="<?php echo $product_id ?>" style="display:none;" />    
-                            <input type='text' name='productname' value="<?php echo $result[1]; ?>" required /> </span>
+                            <input type='text' name='productname' value="<?php  echo $result[0]; ?>" required /> </span>
                         </div>
                         <div class='fields ' >
                             <span>Product Price : </span>
-                            <span> <input type='text' name='productprice'  value="<?php echo $result[2]; ?>" required /> </span>
+                            <span> <input type='text' name='productprice'  value="<?php echo $result[1]; ?>" required /> </span>
                         </div>
 
                         <div class='fields ' >

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo3.png" type="image/x-icon">
     
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
@@ -23,7 +24,7 @@
                         <div > <input type='password' placeholder='Password' name='password' required /></div>
                         <div > <input class='submit-login-btn' type='submit' value='LogIn' /></div>
                     </form>
-                    <p class='register-link'>don't Have any Account <a href='register.php' >Register</a>  </p>
+                    <p class='register-link'>don't Have any Account <a href='register.php' ><b>Register</b></a>  </p>
                 </div>
             </div>
         </div>

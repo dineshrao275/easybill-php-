@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo3.png" type="image/x-icon">
+
     <title>Register</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -42,7 +44,7 @@
                     <div> <input id='submit-register-btn' type='submit' value='Register' /></div>
                 </form>
 
-                <p class='register-link'>already Have an Account. Please <a href='./login.php'>LogIn</a> </p>
+                <p class='register-link'>already Have an Account. Please <a href='./login.php'><b>LogIn</b></a> </p>
             </div>
         </div>
     </div>

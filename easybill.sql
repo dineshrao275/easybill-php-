@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2022 at 09:13 PM
+-- Generation Time: Nov 27, 2022 at 06:00 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.0.23
 
@@ -20,6 +20,24 @@ SET time_zone = "+00:00";
 --
 -- Database: `easybill`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bills`
+--
+
+CREATE TABLE `bills` (
+  `bill_id` int(11) NOT NULL,
+  `invoice` varchar(100) NOT NULL,
+  `customername` varchar(100) NOT NULL,
+  `customercontact` varchar(15) NOT NULL,
+  `customeremail` varchar(100) NOT NULL,
+  `vendorid` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `product_quantity` float NOT NULL,
+  `total_price` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -62,7 +80,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `productname`, `price`, `unit`, `vendorid`, `catagoryname`) VALUES
-(2, 'PeterEngland T-shirts', 1799, 'pcs', 9, 'T-shirts');
+(2, 'PeterEngland T-shirts', 1799, 'gm/kg', 9, 'jeans'),
+(4, 'Redmi y2', 5999, 'pcs', 12, 'Smart Phone');
 
 -- --------------------------------------------------------
 
@@ -96,6 +115,12 @@ INSERT INTO `registration` (`id`, `fullname`, `email`, `age`, `address`, `userna
 --
 
 --
+-- Indexes for table `bills`
+--
+ALTER TABLE `bills`
+  ADD PRIMARY KEY (`bill_id`);
+
+--
 -- Indexes for table `catagory`
 --
 ALTER TABLE `catagory`
@@ -118,6 +143,12 @@ ALTER TABLE `registration`
 --
 
 --
+-- AUTO_INCREMENT for table `bills`
+--
+ALTER TABLE `bills`
+  MODIFY `bill_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `catagory`
 --
 ALTER TABLE `catagory`
@@ -127,7 +158,7 @@ ALTER TABLE `catagory`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `registration`
